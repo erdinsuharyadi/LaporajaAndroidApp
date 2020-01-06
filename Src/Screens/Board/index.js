@@ -19,10 +19,9 @@ class Board extends Component {
     super(props);
     this.state = {
       images: [
-        require('../../Assets/Images/Front/front-1.jpg'),
-        require('../../Assets/Images/Front/front-2.jpg'),
+        require('../../Assets/Images/Front/front-1.jpeg'),
+        require('../../Assets/Images/Front/front-2.jpeg'),
         require('../../Assets/Images/Front/front-3.jpg'),
-        require('../../Assets/Images/Front/front-4.jpg'),
       ]
     };
   }
@@ -46,8 +45,8 @@ class Board extends Component {
 
         {(loginUser && loginUser.isLoading) && <Loader />}
         <View style={{flex:1,alignItems:'center', marginTop: 30, marginHorizontal: 10, marginBottom:20,}}>
-          <Text style={{fontSize:17, fontWeight:'bold', elevation:2}}>FIND & HIRE</Text>
-          <Text style={{fontSize:15, textAlign:'center'}}>Software Engineers online with great experience to achieve your project goal</Text>
+          <Text style={{fontSize:17, fontWeight:'bold', elevation:2}}>Laporaja</Text>
+          <Text style={{fontSize:15, textAlign:'center'}}>Aplikasi pengaduan masyarakat</Text>
         </View>
         <View style={{flex:4}}>
           <TouchableOpacity style={styles.btnCreate} onPress={() => {this.props.navigation.navigate('Signup')}}>

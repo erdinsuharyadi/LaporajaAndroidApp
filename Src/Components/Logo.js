@@ -6,13 +6,13 @@ import {
    Image 
 } from 'react-native';
 
-export default class Logo extends Component<{}> {
+export default class Logo extends Component {
 	render(){
 		return(
 			<View style={styles.container}>
 				<Image  style={{    aspectRatio: 1.5, resizeMode: 'contain',}}
-          			source={require('../Assets/Images/Logo/logo-HiringNesia.png')}/>
-          		<Text style={styles.logoText}>Welcome to HiringNesia</Text>	
+          			source={require('../Assets/Images/Logo/logo.png')}/>
+          		<Text style={styles.logoText}>Welcome to Laporaja!</Text>	
   			</View>
 			)
 	}
